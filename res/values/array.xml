@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <resources>
+   <string-array name="listOptions">
+     <item>1 minute</item>
+     <item>5 minutes</item>
+     <item>15 minutes</item>
+     <item>3O minutes</item>
+     <item>1 hour</item>
+     </string-array>
+
+   <string-array name="listValues">
+     <item>60000</item>
+     <item>300000</item>
+     <item>900000</item>
+     <item>1800000</item>
+     <item>3600000</item>
+   </string-array>
+ </resources>

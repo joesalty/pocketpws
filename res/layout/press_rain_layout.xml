@@ -1,0 +1,39 @@
+                <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android">
+
+            <TextView
+                android:id="@+id/wbarunit"
+                style="@style/Widget_center_text.small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:text="@string/na" />
+
+            <TextView
+                android:id="@+id/wbarometer"
+                style="@style/Widget_center_text.big"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/wbarunit"
+                android:text="@string/na" />
+
+            <TextView
+                android:id="@+id/wrainunit"
+                style="@style/Widget_center_text.small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/wbarometer"
+                android:text="@string/na" />
+
+            <TextView
+                android:id="@+id/wtodaysrain"
+                style="@style/Widget_center_text.big"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/wrainunit"
+                android:text="@string/na" />
+
+        </RelativeLayout>

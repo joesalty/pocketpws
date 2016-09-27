@@ -1,0 +1,13 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/FooterBar" >
+
+	<TextView
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_gravity="bottom"
+	    android:background="#dedede"
+	    android:gravity="center"
+	    android:text="@string/app_version_copy"
+	    android:textColor="#606060" />
+
+</LinearLayout>

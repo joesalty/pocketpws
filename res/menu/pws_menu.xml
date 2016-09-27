@@ -1,0 +1,12 @@
+    <menu xmlns:android="http://schemas.android.com/apk/res/android">
+        <item android:id="@+id/about_id"
+          android:icon="@drawable/action_about"
+          android:title="@string/about"/>
+    <item android:id="@+id/refresh_id"
+          android:icon="@drawable/navigation_refresh"
+          android:title="@string/refresh"
+          android:showAsAction="ifRoom|withText"/>
+    <item android:id="@+id/preferences_id"
+          android:icon="@drawable/action_settings"
+          android:title="@string/preferences"/>
+    </menu>

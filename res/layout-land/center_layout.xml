@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#c1ced7"
+        android:orientation="horizontal" >
+         
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="1" >
+
+        <TextView
+            android:id="@+id/valami"
+            style="@style/Text_simple"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:paddingLeft="10dp"
+            android:paddingTop="1dp"
+            android:text="@string/time"/>
+
+        <TextView
+            android:id="@+id/textView9"
+            style="@style/Text_simple"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:paddingRight="10dp"
+            android:paddingTop="1dp"
+            android:text="@string/date"/>
+
+        <TextView
+            android:id="@+id/station_date"
+            style="@style/Text_big"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/textView9"
+            android:paddingRight="10dp"
+            android:text="@string/na" />
+
+        <TextView
+            android:id="@+id/station_time"
+            style="@style/Text_big"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/valami"
+            android:paddingLeft="10dp"
+            android:text="@string/na" />
+
+        <View
+            android:id="@+id/imageView1"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/station_time"
+            style="@style/Line"/>
+
+        <TextView
+            android:id="@+id/textView1"
+            style="@style/Text_simple"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/imageView1"
+            android:gravity="right"
+            android:paddingLeft="10dp"
+            android:text="@string/pressure"/>
+
+        <TextView
+            android:id="@+id/barunit"
+            style="@style/Text_small"
+            android:layout_alignBaseline="@+id/textView1"
+            android:layout_alignBottom="@+id/textView1"
+            android:layout_centerHorizontal="true"
+            android:text="@string/na" />
+        
+        <TextView
+            android:id="@+id/textView2"
+            style="@style/Text_simple"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/imageView1"
+            android:gravity="right"
+            android:paddingRight="10dp"
+            android:text="@string/trend"/>
+        
+        <TextView
+            android:id="@+id/barometer"
+            style="@style/Text_big"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/textView1"
+            android:paddingLeft="10dp"
+            android:text="@string/na" />
+
+        <TextView
+            android:id="@+id/changebarometer"
+            style="@style/Text_big"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/textView2"
+            android:paddingRight="10dp"
+            android:text="@string/na" />
+
+        <View
+            android:id="@+id/imageView2"
+            android:layout_below="@+id/changebarometer"
+            android:layout_centerHorizontal="true"
+            style="@style/Line"/>
+
+        <TextView
+            android:id="@+id/textView3"
+            style="@style/Text_simple"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/imageView2"
+            android:paddingLeft="10dp"
+            android:text="@string/temp"/>
+
+        <TextView
+            android:id="@+id/textView4"
+            style="@style/Text_simple"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/imageView2"
+            android:paddingRight="10dp"
+            android:text="@string/humidity"/>
+
+        <TextView
+            android:id="@+id/temp"
+            style="@style/Text_big"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/textView3"
+            android:paddingLeft="10dp"
+            android:text="@string/na" />
+
+        <TextView
+            android:id="@+id/hum"
+            style="@style/Text_big"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/textView4"
+            android:paddingRight="10dp"
+            android:text="@string/na" />
+
+        <View
+            android:id="@+id/imageView3"
+            android:layout_below="@+id/hum"
+            android:layout_centerHorizontal="true"
+            style="@style/Line"/>
+
+        <TextView
+            android:id="@+id/textView5"
+            style="@style/Text_simple"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/imageView3"
+            android:paddingLeft="10dp"
+            android:text="@string/rain"/>
+        
+        <TextView
+            android:id="@+id/rainunit"
+            style="@style/Text_small"
+            android:layout_alignBaseline="@+id/textView5"
+            android:layout_alignBottom="@+id/textView5"
+            android:layout_centerHorizontal="true"
+            android:text="@string/na" />
+
+        <TextView
+            android:id="@+id/textView6"
+            style="@style/Text_simple"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/imageView3"
+            android:paddingRight="10dp"
+            android:text="@string/rain_rate"/>
+
+        <TextView
+            android:id="@+id/todaysrain"
+            style="@style/Text_big"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/textView5"
+            android:paddingLeft="10dp"
+            android:text="@string/na" />
+
+        <TextView
+            android:id="@+id/rain_rate"
+            style="@style/Text_big"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/textView6"
+            android:paddingRight="10dp"
+            android:text="@string/na" />
+
+        <View
+            android:id="@+id/imageView4"
+            android:layout_below="@+id/rain_rate"
+            android:layout_centerHorizontal="true"
+            style="@style/Line"/>
+
+        <TextView
+            android:id="@+id/textView7"
+            style="@style/Text_simple"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/imageView4"
+            android:paddingLeft="10dp"
+            android:text="@string/dew"/>
+        
+         <TextView
+            android:id="@+id/tempunit"
+            style="@style/Text_small"
+            android:layout_alignBaseline="@+id/textView7"
+            android:layout_alignBottom="@+id/textView7"
+            android:layout_centerHorizontal="true"
+            android:text="@string/na" />
+
+        <TextView
+            android:id="@+id/textView8"
+            style="@style/Text_simple"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/imageView4"
+            android:paddingRight="10dp"
+            android:text="@string/windchill"/>
+
+        <TextView
+            android:id="@+id/dew"
+            style="@style/Text_big"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/textView7"
+            android:paddingLeft="10dp"
+            android:text="@string/na" />
+
+        <TextView
+            android:id="@+id/windchill"
+            style="@style/Text_big"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/textView8"
+            android:paddingRight="10dp"
+            android:text="@string/na" />
+
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="1" >
+        
+        	<TextView
+            android:id="@+id/textView10"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:paddingLeft="10dp"
+            android:text="@string/wind"
+            style="@style/Text_simple"/>
+
+        <FrameLayout
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/textView10"
+            android:background="@drawable/windrose" >
+
+            <ImageView
+                android:id="@+id/imgwinddir"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"/>
+
+            <TextView
+                android:id="@+id/winddir"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:paddingTop="30dp" 
+                android:text="@string/na"
+                style="@style/Text_big" />
+            
+            <TextView
+                android:id="@+id/windspeed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:paddingTop="60dp" 
+                android:text="@string/na"
+                style="@style/Text_big" />
+            
+            <TextView
+                android:id="@+id/windunit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:paddingTop="90dp" 
+                style="@style/Text_small" />
+
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/textView10"
+            android:paddingRight="10dp"
+            android:text="@string/sun"
+            style="@style/Text_simple"/>
+
+        <TextView
+            android:id="@+id/sunrise"
+            style="@style/Text_big"
+            android:paddingRight="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/textView11"
+            android:text="@string/na" />
+
+        <TextView
+            android:id="@+id/sunset"
+            style="@style/Text_big"
+            android:paddingRight="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/sunrise"
+            android:text="@string/na" />
+        
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/sunset"
+            android:paddingRight="10dp"
+            android:text="@string/moon"
+            style="@style/Text_simple"/>
+        
+        <TextView
+            android:id="@+id/moonrise"
+            style="@style/Text_big"
+            android:paddingRight="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/textView12"
+            android:text="@string/na" />
+
+        <TextView
+            android:id="@+id/moonset"
+            style="@style/Text_big"
+            android:paddingRight="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/moonrise"
+            android:text="@string/na" />
+     
+    </RelativeLayout>
+</LinearLayout>

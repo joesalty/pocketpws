@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+ <PreferenceCategory
+   android:summary="@string/url_info"
+   android:title="@string/url_settings" >
+  <EditTextPreference
+     android:key="url"
+     android:summary="@string/pls_enter_url_here"
+     android:title="@string/xml_file_url"
+     android:defaultValue="http://joesalty77.no-ip.org/wview.xml" />
+ </PreferenceCategory>
+ <PreferenceCategory
+   android:summary="@string/dwn_ref_settings"
+   android:title="@string/ref_settings" >
+  <CheckBoxPreference
+     android:key="auto_download"
+     android:summaryOn="@string/dwn_enabled"
+     android:summaryOff="@string/dwn_disabled"
+     android:title="@string/dwn"
+     android:disableDependentsState="false"
+     android:defaultValue="true" />
+  <CheckBoxPreference
+     android:key="app_auto_download"
+     android:summaryOn="@string/app_dwn_true"
+     android:summaryOff="@string/app_dwn_false"
+     android:title="@string/auto_dwn_start"
+     android:dependency="auto_download"
+     android:defaultValue="true" />
+    <CheckBoxPreference
+     android:key="download_on_wifi"
+     android:summaryOn="@string/app_use_wifi"
+     android:summaryOff="@string/app_use_any"
+     android:dependency="auto_download"
+     android:defaultValue="false"
+     android:title="@string/use_wifi"/>
+    <CheckBoxPreference
+     android:key="widget_auto_download"
+     android:summaryOn="@string/widget_dwn"
+     android:summaryOff="@string/disabled"
+     android:dependency="auto_download"
+     android:title="@string/widget_auto_upd"
+     android:disableDependentsState="false" />
+  <ListPreference
+     android:entries="@array/listOptions"
+     android:entryValues="@array/listValues"
+     android:key="refresh_time"
+     android:dependency="widget_auto_download"
+     android:title="@string/refresh_time" />
+ </PreferenceCategory>
+</PreferenceScreen>
