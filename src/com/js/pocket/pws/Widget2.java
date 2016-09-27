@@ -50,7 +50,7 @@ public class Widget2 extends AppWidgetProvider {
         Intent active = new Intent(context,WidgetService.class);
         active.setAction(command);
         active.putExtra(AppWidgetManager.EXTRA_APPWIDGET_ID, appWidgetId);
-        active.putExtra(AppWidgetManager.EXTRA_CUSTOM_INFO, R.layout.widget_layout_21);
+        active.putExtra(AppWidgetManager.EXTRA_CUSTOM_INFO, R.layout.widget_layout_42);
         //this Uri data is to make the PendingIntent unique, so it wont be updated by FLAG_UPDATE_CURRENT
         //so if there are multiple widget instances they wont override each other
         Uri data = Uri.withAppendedPath(Uri.parse("weatherwidget://widget/id/#"+command+appWidgetId), String.valueOf(appWidgetId));

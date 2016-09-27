@@ -11,7 +11,8 @@
             android:layout_alignParentTop="true"
             android:paddingLeft="10dp"
             android:paddingTop="1dp"
-            android:text="@string/time"/>
+            android:text="@string/time"
+            android:maxLength="16"/>
 
         <TextView
             android:id="@+id/textView9"
@@ -20,7 +21,8 @@
             android:layout_alignParentTop="true"
             android:paddingRight="10dp"
             android:paddingTop="1dp"
-            android:text="@string/date"/>
+            android:text="@string/date"
+            android:maxLength="16"/>
 
         <TextView
             android:id="@+id/station_date"
@@ -51,7 +53,8 @@
             android:layout_below="@+id/imageView1"
             android:gravity="right"
             android:paddingLeft="10dp"
-            android:text="@string/pressure"/>
+            android:text="@string/pressure"
+            android:maxLength="16"/>
 
         <TextView
             android:id="@+id/barunit"
@@ -68,7 +71,8 @@
             android:layout_below="@+id/imageView1"
             android:gravity="right"
             android:paddingRight="10dp"
-            android:text="@string/trend"/>
+            android:text="@string/trend"
+            android:maxLength="16"/>
         
         <TextView
             android:id="@+id/barometer"
@@ -98,7 +102,8 @@
             android:layout_alignParentLeft="true"
             android:layout_below="@+id/imageView2"
             android:paddingLeft="10dp"
-            android:text="@string/temp"/>
+            android:text="@string/temp"
+            android:maxLength="16"/>
 
         <TextView
             android:id="@+id/textView4"
@@ -106,7 +111,8 @@
             android:layout_alignParentRight="true"
             android:layout_below="@+id/imageView2"
             android:paddingRight="10dp"
-            android:text="@string/humidity"/>
+            android:text="@string/humidity"
+            android:maxLength="16"/>
 
         <TextView
             android:id="@+id/temp"
@@ -136,7 +142,8 @@
             android:layout_alignParentLeft="true"
             android:layout_below="@+id/imageView3"
             android:paddingLeft="10dp"
-            android:text="@string/rain"/>
+            android:text="@string/rain"
+            android:maxLength="16"/>
         
         <TextView
             android:id="@+id/rainunit"
@@ -152,7 +159,8 @@
             android:layout_alignParentRight="true"
             android:layout_below="@+id/imageView3"
             android:paddingRight="10dp"
-            android:text="@string/rain_rate"/>
+            android:text="@string/rain_rate"
+            android:maxLength="16"/>
 
         <TextView
             android:id="@+id/todaysrain"
@@ -182,7 +190,8 @@
             android:layout_alignParentLeft="true"
             android:layout_below="@+id/imageView4"
             android:paddingLeft="10dp"
-            android:text="@string/dew"/>
+            android:text="@string/dew"
+            android:maxLength="16"/>
         
          <TextView
             android:id="@+id/tempunit"
@@ -198,7 +207,8 @@
             android:layout_alignParentRight="true"
             android:layout_below="@+id/imageView4"
             android:paddingRight="10dp"
-            android:text="@string/windchill"/>
+            android:text="@string/windchill"
+            android:maxLength="16"/>
 
         <TextView
             android:id="@+id/dew"
@@ -228,7 +238,8 @@
             android:layout_below="@+id/imageView5"
             android:paddingLeft="10dp"
             android:text="@string/wind"
-            style="@style/Text_simple"/>
+            style="@style/Text_simple"
+            android:maxLength="16"/>
 
         <FrameLayout
             android:layout_width="150dp"
@@ -276,7 +287,8 @@
             android:layout_alignTop="@+id/textView10"
             android:paddingRight="10dp"
             android:text="@string/sun"
-            style="@style/Text_simple"/>
+            style="@style/Text_simple"
+            android:maxLength="16"/>
 
         <TextView
             android:id="@+id/sunrise"
@@ -300,7 +312,8 @@
             android:layout_below="@+id/sunset"
             android:paddingRight="10dp"
             android:text="@string/moon"
-            style="@style/Text_simple"/>
+            style="@style/Text_simple"
+            android:maxLength="16"/>
         
         <TextView
             android:id="@+id/moonrise"

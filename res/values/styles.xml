@@ -69,7 +69,7 @@
 	    <item name="android:textSize">13dp</item>
 	</style>
 	<style name="Widget_center_text.normal">
-	    <item name="android:textSize">20dp</item>
+	    <item name="android:textSize">23dp</item>
 	</style>
 	<style name="Widget_center_text.big">
 	    <item name="android:textSize">30dp</item>
@@ -122,5 +122,115 @@
 	    <item name="android:textStyle">bold</item>
 	    <item name="android:textColor">#000000</item>
 	    <item name="android:gravity">center</item>
+	</style>
+	<style name="Text_huge_roboto">
+	    <item name="android:layout_width">wrap_content</item>
+	    <item name="android:layout_height">wrap_content</item>
+	    <item name="android:textSize">70dp</item>
+	    <item name="android:textColor">#ffffff</item>
+	</style>
+	<style name="Text_big_roboto">
+	    <item name="android:layout_width">wrap_content</item>
+	    <item name="android:layout_height">wrap_content</item>
+	    <item name="android:textSize">23dp</item>
+	    <item name="android:textColor">#d4d4d4</item>
+	</style>
+	<style name="Text_big_roboto_white">
+	    <item name="android:layout_width">wrap_content</item>
+	    <item name="android:layout_height">wrap_content</item>
+	    <item name="android:textSize">23dp</item>
+	    <item name="android:textColor">#ffffff</item>
+	</style>
+	
+	<style name="Text_big2_roboto">
+	    <item name="android:layout_width">wrap_content</item>
+	    <item name="android:layout_height">wrap_content</item>
+	    <item name="android:textSize">40dp</item>
+	    <item name="android:textColor">#d4d4d4</item>
+	</style>
+	<style name="Text_big2_roboto_white">
+	    <item name="android:layout_width">wrap_content</item>
+	    <item name="android:layout_height">wrap_content</item>
+	    <item name="android:textSize">40dp</item>
+	    <item name="android:textColor">#ffffff</item>
+	</style>
+	
+	<style name="Text_normal_roboto">
+	    <item name="android:layout_width">wrap_content</item>
+	    <item name="android:layout_height">wrap_content</item>
+	    <item name="android:textSize">20dp</item>
+	    <item name="android:textColor">#d4d4d4</item>
+	</style>
+	<style name="Text_small_roboto">
+	    <item name="android:layout_width">wrap_content</item>
+	    <item name="android:layout_height">wrap_content</item>
+	    <item name="android:textSize">15dp</item>
+	    <item name="android:textColor">#d4d4d4</item>
+	</style>
+	<style name="Text_small2_roboto">
+	    <item name="android:layout_width">wrap_content</item>
+	    <item name="android:layout_height">wrap_content</item>
+	    <item name="android:textSize">13dp</item>
+	    <item name="android:textColor">#d4d4d4</item>
+	</style>
+	<style name="smallimage">
+	    <item name="android:layout_width">20dp</item>
+	    <item name="android:layout_height">20dp</item>
+	</style>
+	<style name="smallimage2">
+	    <item name="android:layout_width">15dp</item>
+	    <item name="android:layout_height">15dp</item>
+	</style>
+	<style name="normalimage">
+	    <item name="android:layout_width">25dp</item>
+	    <item name="android:layout_height">25dp</item>
+	</style>
+	<style name="customimage">
+	    <item name="android:layout_width">25dp</item>
+	    <item name="android:layout_height">25dp</item>
+	    <item name="android:paddingTop">20dp</item>
+	</style>
+	<style name="Text_huge_roboto_sw600">
+	    <item name="android:layout_width">wrap_content</item>
+	    <item name="android:layout_height">wrap_content</item>
+	    <item name="android:textSize">95dp</item>
+	    <item name="android:textColor">#ffffff</item>
+	</style>
+	<style name="Text_big_roboto_sw600">
+	    <item name="android:layout_width">wrap_content</item>
+	    <item name="android:layout_height">wrap_content</item>
+	    <item name="android:textSize">58dp</item>
+	    <item name="android:textColor">#d4d4d4</item>
+	</style>
+	<style name="Text_big_roboto_white_sw600">
+	    <item name="android:layout_width">wrap_content</item>
+	    <item name="android:layout_height">wrap_content</item>
+	    <item name="android:textSize">58dp</item>
+	    <item name="android:textColor">#ffffff</item>
+	</style>
+	<style name="Text_normal_roboto_sw600">
+	    <item name="android:layout_width">wrap_content</item>
+	    <item name="android:layout_height">wrap_content</item>
+	    <item name="android:textSize">50dp</item>
+	    <item name="android:textColor">#d4d4d4</item>
+	</style>
+	<style name="Text_small_roboto_sw600">
+	    <item name="android:layout_width">wrap_content</item>
+	    <item name="android:layout_height">wrap_content</item>
+	    <item name="android:textSize">40dp</item>
+	    <item name="android:textColor">#d4d4d4</item>
+	</style>
+	<style name="smallimage_sw600">
+	    <item name="android:layout_width">45dp</item>
+	    <item name="android:layout_height">45dp</item>
+	</style>
+	<style name="normalimage_sw600">
+	    <item name="android:layout_width">60dp</item>
+	    <item name="android:layout_height">60dp</item>
+	</style>
+	<style name="customimage_sw600">
+	    <item name="android:layout_width">60dp</item>
+	    <item name="android:layout_height">60dp</item>
+	    <item name="android:paddingTop">30dp</item>
 	</style>
 </resources>

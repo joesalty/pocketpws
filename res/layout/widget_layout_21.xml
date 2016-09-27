@@ -1,14 +1,91 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/weatherwidget"
+    android:id="@+id/weatherwidget2"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:background="@drawable/background"
-    android:orientation="vertical">
-<!-- Include top text -->
-    	<include layout="@layout/widget_top_layout"/>
-<!-- Include top text -->
-    	<include layout="@layout/widget_center_layout"/>
-<!-- Include top text -->
-    	<include layout="@layout/widget_bottom_layout"/>    
+    android:orientation="vertical" >
+<TextView
+            android:layout_width="wrap_content"
+            android:id="@+id/rwstation_location"
+            style="@style/Text_small2_roboto"
+            android:text="@string/na" 
+            android:paddingTop="2dp"
+            android:maxLength="25"
+            android:layout_gravity="center_horizontal|top"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal|center_vertical" >
+    <TextView
+        android:id="@+id/rwtemp"
+        style="@style/Text_big2_roboto_white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="5dp"
+        android:text="@string/na" />
+
+    <TextView
+        style="@style/Text_big2_roboto_white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/degree" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal" 
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingBottom="5dp">
+
+            <ImageView
+                style="@style/smallimage2"
+                android:src="@drawable/rcompass"
+                android:paddingRight="1dp" 
+                android:layout_gravity="bottom"/>
+
+            <TextView
+                android:id="@+id/rwwindspeed"
+                style="@style/Text_small2_roboto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/na" 
+                android:layout_gravity="bottom"/>
+
+            <TextView
+                android:id="@+id/rwwindunit"
+                style="@style/Text_small2_roboto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1."
+                android:text="@string/na" 
+                android:layout_gravity="bottom"/>
+
+            <ImageView
+                style="@style/smallimage2"
+                android:src="@drawable/rrain"
+                android:paddingRight="1dp" 
+                android:layout_gravity="bottom"/>
+
+            <TextView
+                android:id="@+id/rwtodaysrain"
+                style="@style/Text_small2_roboto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/na" 
+                android:layout_gravity="bottom"/>
+
+            <TextView
+                android:id="@+id/rwrainunit"
+                style="@style/Text_small2_roboto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/na" 
+                android:layout_gravity="bottom"/>
+
+    </LinearLayout>
+
 </LinearLayout>

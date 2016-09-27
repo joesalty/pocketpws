@@ -1,0 +1,30 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:id="@+id/wwindunit"
+        style="@style/Widget_center_text.small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/na" />
+
+    <TextView
+        android:id="@+id/wwindspeed"
+        style="@style/Widget_center_text.normal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/wwindunit"
+        android:layout_centerHorizontal="true"
+        android:text="@string/na" />
+
+    <TextView
+        android:id="@+id/wwinddir"
+        style="@style/Widget_center_text.small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/wwindspeed"
+        android:text="@string/na" />
+
+</RelativeLayout>

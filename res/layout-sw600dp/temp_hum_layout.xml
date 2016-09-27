@@ -1,0 +1,39 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android">
+
+<TextView
+android:id="@+id/wtempunit"
+style="@style/Widget_center_text.small"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_alignParentRight="true"
+android:layout_alignParentTop="true"
+android:text="@string/na" />
+
+<TextView
+android:id="@+id/wtemp"
+style="@style/Widget_center_text.normal"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_alignParentRight="true"
+android:layout_below="@+id/wtempunit"
+android:text="@string/na" />
+
+<TextView
+android:id="@+id/whumunit"
+style="@style/Widget_center_text.small"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_alignParentRight="true"
+android:layout_below="@+id/wtemp"
+android:text="@string/na" />
+
+<TextView
+android:id="@+id/whum"
+style="@style/Widget_center_text.normal"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_alignParentRight="true"
+android:layout_below="@+id/whumunit"
+android:text="@string/na" />
+
+</RelativeLayout>

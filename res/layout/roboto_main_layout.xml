@@ -1,0 +1,259 @@
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center_horizontal|top"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/rstation_location"
+            style="@style/Text_big_roboto"
+            android:text="@string/na" 
+            android:paddingTop="10dp"/>
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" 
+            android:gravity="center_horizontal|top"
+            android:paddingTop="1dp">
+       		<TextView
+      		    android:id="@+id/rstation_date"
+      		    style="@style/Text_small_roboto"
+      		    android:layout_marginRight="2dp"
+      		    android:text="@string/na" />
+ 			<TextView
+	        	android:id="@+id/rstation_time"
+            	style="@style/Text_small_roboto"
+            	android:layout_marginLeft="2dp"
+            	android:text="@string/na" />
+        </TableRow>
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal|top"
+            android:paddingTop="20dp">
+            <TextView
+            	android:id="@+id/rtemp"
+            	style="@style/Text_huge_roboto"
+            	android:text="@string/na" />
+      		<TextView
+            	style="@style/Text_huge_roboto"
+            	android:text="@string/degree" />
+        </TableRow>            
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="top"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="20dp" >
+            <ImageView
+                style="@style/normalimage"
+                android:src="@drawable/rwind" />
+            <TextView
+                android:id="@+id/rwindspeed"
+                style="@style/Text_normal_roboto"
+                android:paddingLeft="2dp"
+                android:text="@string/na" />
+            <TextView
+                android:id="@+id/rwindunit"
+                style="@style/Text_small_roboto"
+                android:layout_width="0dp"
+                android:layout_weight="1.00"
+                android:text="@string/na" />
+            <ImageView
+                style="@style/normalimage"
+                android:src="@drawable/rpressure" />
+            <TextView
+                android:id="@+id/rbarometer"
+                style="@style/Text_normal_roboto"
+                android:layout_width="wrap_content"
+                android:paddingLeft="2dp"
+                android:text="@string/na" />
+            <TextView
+                android:id="@+id/rbarunit"
+                style="@style/Text_small_roboto"
+                android:layout_width="wrap_content"
+                android:text="@string/na" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="top"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="20dp" >
+            <ImageView
+                style="@style/normalimage"
+                android:src="@drawable/rcompass" />
+            <TextView
+                android:id="@+id/rwinddir"
+                style="@style/Text_normal_roboto"
+                android:layout_width="0dp"
+                android:layout_weight="1.00"
+                android:paddingLeft="2dp"
+                android:text="@string/na" />
+            <ImageView
+                style="@style/normalimage"
+                android:src="@drawable/rhumidity" />
+            <TextView
+                android:id="@+id/rhum"
+                style="@style/Text_normal_roboto"
+                android:layout_width="wrap_content"
+                android:paddingLeft="2dp"
+                android:text="@string/na" />
+            <TextView
+                android:id="@+id/rhumunit"
+                style="@style/Text_small_roboto"
+                android:text="@string/na" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="top"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="20dp" >
+            <ImageView
+                style="@style/normalimage"
+                android:src="@drawable/rheatindex" />
+            <TextView
+                android:id="@+id/rheatindex"
+                style="@style/Text_normal_roboto"
+                android:layout_width="wrap_content"
+                android:paddingLeft="2dp"
+                android:text="@string/na" />
+            <TextView
+            	style="@style/Text_normal_roboto"
+            	android:layout_width="0dp"
+                android:layout_weight="1.00"
+            	android:text="@string/degree" />
+            <ImageView
+                style="@style/normalimage"
+                android:src="@drawable/rwindchill" />
+            <TextView
+                android:id="@+id/rwindchill"
+                style="@style/Text_normal_roboto"
+                android:layout_width="wrap_content"
+                android:paddingLeft="2dp"
+                android:text="@string/na" />
+            <TextView
+            	style="@style/Text_normal_roboto"
+            	android:text="@string/degree" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="top"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="20dp" >
+            <ImageView
+                style="@style/normalimage"
+                android:src="@drawable/rrain" />
+            <TextView
+                android:id="@+id/rtodaysrain"
+                style="@style/Text_normal_roboto"
+                android:layout_width="wrap_content"
+                android:paddingLeft="2dp"
+                android:text="@string/na" />
+            <TextView
+                android:id="@+id/rrainunit"
+            	style="@style/Text_small_roboto"
+            	android:layout_width="0dp"
+                android:layout_weight="1.00"
+                android:text="@string/na" />
+            <ImageView
+                style="@style/normalimage"
+                android:src="@drawable/rdew" />
+            <TextView
+                android:id="@+id/rdew"
+                style="@style/Text_normal_roboto"
+                android:layout_width="wrap_content"
+                android:paddingLeft="2dp"
+                android:text="@string/na" />
+            <TextView
+            	style="@style/Text_normal_roboto"
+            	android:text="@string/degree" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="top"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="20dp" >
+            <ImageView
+                style="@style/normalimage"
+                android:id="@+id/rcustom1_pic" />
+            <TextView
+                android:id="@+id/rcustom1_data"
+                style="@style/Text_normal_roboto"
+                android:layout_width="wrap_content"
+                android:paddingLeft="2dp"/>
+            <TextView
+                android:id="@+id/rcustom1_unit"
+            	style="@style/Text_small_roboto"
+            	android:layout_width="0dp"
+                android:layout_weight="1.00"
+                android:paddingLeft="2dp"/>
+            <ImageView
+                style="@style/normalimage"
+                android:id="@+id/rcustom2_pic" />
+            <TextView
+                android:id="@+id/rcustom2_data"
+                style="@style/Text_normal_roboto"
+                android:layout_width="wrap_content"
+                android:paddingLeft="2dp"/>
+            <TextView
+                android:id="@+id/rcustom2_unit"
+                style="@style/Text_small_roboto"
+                android:paddingLeft="2dp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="top"
+            android:paddingLeft="13dp"
+            android:paddingRight="15dp"
+            android:paddingTop="20dp" >
+            <ImageView
+                style="@style/smallimage"
+                android:src="@drawable/rsunrise" />
+
+            <TextView
+                android:id="@+id/rsunrise"
+                style="@style/Text_small_roboto"
+                android:layout_width="wrap_content"
+                android:layout_weight="0.33"
+                android:paddingLeft="2dp"
+                android:text="@string/na" />
+
+            <ImageView
+                style="@style/smallimage"
+                android:src="@drawable/rsunset" />
+            <TextView
+                android:id="@+id/rsunset"
+                style="@style/Text_small_roboto"
+                android:layout_width="wrap_content"
+                android:layout_weight="0.33"
+                android:paddingLeft="1dp"
+                android:text="@string/na" />
+            <ImageView
+                style="@style/smallimage"
+                android:src="@drawable/rmoonrise" />
+            <TextView
+                android:id="@+id/rmoonrise"
+                style="@style/Text_small_roboto"
+                android:layout_width="wrap_content"
+                android:layout_weight="0.33"
+                android:text="@string/na" />
+            <ImageView
+                style="@style/smallimage"
+                android:src="@drawable/rmmonset" />
+            <TextView
+                android:id="@+id/rmoonset"
+                style="@style/Text_small_roboto"
+                android:layout_width="wrap_content"
+                android:text="@string/na" />
+        </LinearLayout>
+</LinearLayout>

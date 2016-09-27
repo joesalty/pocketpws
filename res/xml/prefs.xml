@@ -7,7 +7,22 @@
      android:key="url"
      android:summary="@string/pls_enter_url_here"
      android:title="@string/xml_file_url"
-     android:defaultValue="http://joesalty77.no-ip.org/wview.xml" />
+     android:defaultValue="http://android.teszdesign.hu/wview.xml" />
+ </PreferenceCategory>
+  <PreferenceCategory
+   android:title="@string/theme_settings" >
+  <ListPreference
+     android:entries="@array/themeOptions"
+     android:entryValues="@array/themeValues"
+     android:key="theme_settings"
+     android:title="@string/choose_theme"
+     android:defaultValue="1" />
+    <ListPreference
+     android:entries="@array/themeColor"
+     android:entryValues="@array/themeColorValues"
+     android:key="theme_color"
+     android:title="@string/choose_color"
+     android:defaultValue="#0099cc" />
  </PreferenceCategory>
  <PreferenceCategory
    android:summary="@string/dwn_ref_settings"
@@ -45,6 +60,7 @@
      android:entryValues="@array/listValues"
      android:key="refresh_time"
      android:dependency="widget_auto_download"
-     android:title="@string/refresh_time" />
+     android:title="@string/refresh_time"
+     android:defaultValue="900000" />
  </PreferenceCategory>
 </PreferenceScreen>

@@ -26,7 +26,6 @@ import android.content.SharedPreferences;
 import android.net.ConnectivityManager;
 import android.os.AsyncTask;
 import android.os.IBinder;
-import android.util.Log;
 import android.widget.RemoteViews;
 
 public class WidgetService extends Service {
@@ -53,6 +52,7 @@ public class WidgetService extends Service {
         long current_time = new Date().getTime();
 		long download_time = prefs.getLong("download_time", 0);
 		String refreshtime = prefs.getString("refresh_time", "900000");
+//		String theme_color =prefs.getString("theme_color", "#0099cc");
 		long refresh_time = Long.parseLong(refreshtime);
 		long dt = refresh_time+download_time;
 		boolean downloading_now = prefs.getBoolean("downloading_now", false);
@@ -109,6 +109,8 @@ public class WidgetService extends Service {
 				websiteList = websiteElement.getChildNodes();
 				int ressourceId = getResources().getIdentifier("w"+websiteElement.getAttribute("realtime"),"id",this.getBaseContext().getPackageName());
 				int ressourceId2 = getResources().getIdentifier("w"+websiteElement.getAttribute("units"),"id",this.getBaseContext().getPackageName());
+//				int ressourceId3 = getResources().getIdentifier("rw"+websiteElement.getAttribute("realtime"),"id",this.getBaseContext().getPackageName());
+//				int ressourceId4 = getResources().getIdentifier("rw"+websiteElement.getAttribute("units"),"id",this.getBaseContext().getPackageName());
 				//Check is textview id true (if not then do nothing), and put the text into the textView
 				if (ressourceId !=0) {
 					remoteView.setTextViewText(ressourceId, ((websiteList.item(0)).getNodeValue()));
@@ -116,6 +118,12 @@ public class WidgetService extends Service {
 				if (ressourceId2 !=0) {
 					remoteView.setTextViewText(ressourceId2, ((websiteList.item(0)).getNodeValue()));
 				}
+//				if (ressourceId3 !=0) {
+//					remoteView.setTextViewText(ressourceId3, ((websiteList.item(0)).getNodeValue()));
+//				}
+//				if (ressourceId4 !=0) {
+//					remoteView.setTextViewText(ressourceId4, ((websiteList.item(0)).getNodeValue()));
+//				}
 			}
 
 			NodeList nodeList2 = doc.getElementsByTagName("misc");
@@ -128,10 +136,14 @@ public class WidgetService extends Service {
 				Element websiteElement = (Element) websiteList2.item(0);
 				websiteList2 = websiteElement.getChildNodes();
 				int ressourceId3 = getResources().getIdentifier("w"+websiteElement.getAttribute("data"),"id",this.getBaseContext().getPackageName());
+//				int ressourceId4 = getResources().getIdentifier("rw"+websiteElement.getAttribute("data"),"id",this.getBaseContext().getPackageName());
 				//Check is textview id true (if not then do nothing), and put the text into the textView
 				if (ressourceId3 !=0) {
 					remoteView.setTextViewText(ressourceId3, ((websiteList2.item(0)).getNodeValue()));
 				}
+//				if (ressourceId4 !=0) {
+//					remoteView.setTextViewText(ressourceId4, ((websiteList2.item(0)).getNodeValue()));
+//				}
 			}
 		} catch (Exception e) {
 			//System.out.println("XML Pasing Excpetion = " + e);
@@ -139,7 +151,11 @@ public class WidgetService extends Service {
 //}
 //DATA UPDATE END
 		// apply changes to widget
+		//Log.i("WidgetService", "Refreshing data");
 				remoteView.setOnClickPendingIntent(R.id.weatherwidget, contentIntent);
+//				remoteView.setOnClickPendingIntent(R.id.weatherwidget2, contentIntent);
+//				remoteView.setInt(R.id.weatherwidget2, "setBackgroundColor", 
+//				        android.graphics.Color.parseColor(theme_color));
 		appWidgetManager.updateAppWidget(appWidgetId, remoteView);
 		super.onStart(intent, startId);
 	}
@@ -160,7 +176,7 @@ public class WidgetService extends Service {
 		/**getting XML*/
 		protected String doInBackground(String... args) {
 			SharedPreferences prefs = getSharedPreferences("com.js.pocket.pws_preferences", 0);
-			String xmlurl = prefs.getString("url", "http://joesalty77.no-ip.org/wview.xml");
+			String xmlurl = prefs.getString("url", "http://android.teszdesign.hu/wview.xml");
 			try {
 		    	URL url = new URL(xmlurl);
 		        URLConnection conexion = url.openConnection();
@@ -185,7 +201,7 @@ public class WidgetService extends Service {
 		        }
 		        is.close();
 		        fos.close();
-		        Log.i("WidgetService","XML download completed");
+		        //Log.i("WidgetService","XML download completed");
 		        
 		        SharedPreferences.Editor edit=prefs.edit();
 		        long current_time = new Date().getTime();

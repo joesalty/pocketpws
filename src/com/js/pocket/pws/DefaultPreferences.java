@@ -5,7 +5,26 @@ import java.util.Date;
 import android.content.SharedPreferences;
 
 public class DefaultPreferences {
+	
+	protected static String getVersion() {
+        //default value to return if this preference does not exist is <em>true</em>
+    	return MainActivity.sharedPreferences.getString("version", "0");
 
+    }
+
+	protected static void putVersion() {
+        SharedPreferences.Editor edit = MainActivity.sharedPreferences.edit();
+        //value of "isFirstRun" changed to false
+        edit.putString("version", "4" );
+        edit.commit();
+    }
+	
+	protected static void clearDownloading_now() {
+        SharedPreferences.Editor edit = MainActivity.sharedPreferences.edit();
+        //value of "isFirstRun" changed to false
+        edit.putBoolean("downloading_now", false );
+        edit.commit();
+    }
 	
     protected static boolean isFirstRun() {
                 //default value to return if this preference does not exist is <em>true</em>
@@ -36,7 +55,7 @@ public class DefaultPreferences {
     }
     
     protected static boolean WidgetDownload() {
-        //default value to return if this preference does not exist is <em>true</em>
+        //default value to return if this preference does not exist is <em>false</em>
     	return MainActivity.sharedPreferences.getBoolean("widget_auto_download", false);
 
     }
@@ -53,7 +72,7 @@ public class DefaultPreferences {
     
     protected static String whatisurl() {
         //default value to return if this preference does not exist is <em>true</em>
-    	return MainActivity.sharedPreferences.getString("url", "http://joesalty77.no-ip.org/wview.xml");
+    	return MainActivity.sharedPreferences.getString("url", "http://android.teszdesign.hu/wview.xml");
 
     }
     
@@ -61,6 +80,15 @@ public class DefaultPreferences {
         //default value to return if this preference does not exist is <em>true</em>
     	return MainActivity.sharedPreferences.getString("refresh_time", "900000");
 
-    }    
-    
+    }
+    protected static String themeSettings() {
+        //default value to return if this preference does not exist is <em>true</em>
+    	return MainActivity.sharedPreferences.getString("theme_settings", "1");
+
+    }
+    protected static String themeColor() {
+        //default value to return if this preference does not exist is <em>true</em>
+    	return MainActivity.sharedPreferences.getString("theme_color", "#0099cc");
+
+    }
 }

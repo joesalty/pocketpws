@@ -11,6 +11,7 @@
     	android:background="@drawable/txt_bg_top_center"
     	android:layout_height="wrap_content"
     	android:layout_width="wrap_content"
+    	android:maxLength="25"
     	android:text="@string/na"
     	style="@style/Widget_bottom_top_text"/>
 	<ImageView

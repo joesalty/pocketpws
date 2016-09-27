@@ -8,8 +8,6 @@ import java.net.MalformedURLException;
 import java.net.URL;
 import java.net.URLConnection;
 
-import android.util.Log;
-
 public class XMLDownload{
 	public XMLDownload() {
 	}
@@ -39,7 +37,7 @@ public class XMLDownload{
 	        }
 	        is.close();
 	        fos.close();
-	        Log.i("MainActivity","XML download completed");
+	        //Log.i("MainActivity","XML download completed");
 	        DefaultPreferences.DownloadTime();
 	    } catch (MalformedURLException e) {
 	        // TODO Auto-generated catch block

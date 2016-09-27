@@ -1,10 +1,11 @@
 <resources>
+    <string name="whatsnew"><b>What\'s new in version 2.1</b>\n\nFix Widget display bug in 2.3.x devices\n\n<b>Version 2.0</b>\n\nPossibility to display 2 custom weather data in App\nRead more at:\nhttp://android.teszdesign.hu/xml-customization/\n\nGestures controll\n\nNew theme:\n2x1 widget\n5 different colors\none new font.\nYou can switch back to old theme, go to Settings >> Theme settings and choose "Retro"\n\nBug fixes\n</string>
 	<string name="app_name">Pocket PWS</string>
-	<string name="app_version_copy">Version: 1.0 \u00A9 2011 - 2013</string>
-    <string name="hello">You are using application for the firs time\nPlease go to the Settings menu, and set your .xml file URL.\nIf you do not set a different URL, you will see data from the default weather station!\nYou can return to the Settings at any time.</string>
+	<string name="app_version_copy">Version: 2.1 \u00A9 2011 - 2013</string>
+    <string name="hello">You are using application for the firs time\nPlease go to the Settings menu, and set your .xml file URL.\nIf you do not set a different URL, you will see data from the sample weather station!\nYou can return to the Settings at any time.</string>
     <string name="refresh">Refresh</string>
     <string name="about">About</string>
-    <string name="about_text">This application is still under development. In case of any unexpected error please write email to \njoesalty77@gmail.com\n\nVersion: v1.0\nThank you for using this application!</string>
+    <string name="about_text">This application displays personal weather station informations. For installation instructions and to download the additional file please visit application home page: http://android.teszdesign.hu\nIn case of any unexpected error please write email to joesalty77@gmail.com\n\nThank you for using my application!</string>
     <string name="close">Close</string>
     <string name="ok">OK</string>
     <string name="preferences">Preferences</string>
@@ -42,4 +43,24 @@
     <string name="disabled">If available, widget will download data automatically</string>
     <string name="widget_auto_upd">Widget auto update</string>
     <string name="refresh_time">Refresh time</string>
+    <string name="degree">°</string>
+    <string name="theme_settings">Theme settings</string>
+    <string name="choose_theme">Choose theme</string>
+    <string name="color_settings">Color settings</string>
+    <string name="choose_color">Choose color</string>
+    <string name="blue">Blue</string>
+    <string name="purple">Purple</string>
+    <string name="green">Green</string>
+    <string name="yellow">Yellow</string>
+    <string name="red">Red</string>
+    <string name="swipe_left">Swipe to left to view today\'s almanach.</string>
+    <string name="swipe_right">Swipe to right to exit</string>
+    <string name="swipe_top">Swipe to top to see Settings</string>
+    <string name="swipe_bottom">Swipe to bottom to see Credits</string>
+    <string name="tap_hold">Tap and hold to refresh the data</string>
+    <string name="onemin">1 minute</string>
+    <string name="fivemin">5 minutes</string>
+    <string name="fifteenmin">15 minutes</string>
+    <string name="thirtymin">3O minutes</string>
+    <string name="onehour">1 hour</string>
 </resources>
